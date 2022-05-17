@@ -7,6 +7,7 @@ import com.itheima.service.IBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -16,8 +17,7 @@ public class BookController2 {
     @Autowired
     private IBookService bookService;
     @GetMapping
-    public R getAll(){
-        return new R(true,bookService.list());
+    public R getAll()  {return new R(true,bookService.list());
     }
 
     @PostMapping
