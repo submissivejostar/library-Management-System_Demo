@@ -1,1 +1,1 @@
-### library-Management-System_Demo
+### 一个JAVA基础学习而制作的图书管理系统DEMO。
